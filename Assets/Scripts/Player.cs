@@ -36,5 +36,15 @@ public class Player : MonoBehaviour {
 
     }
 
+    void OnCollisionEnter(Collision collision)
+        {
+
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            Debug.Log("contact !");
+        }
+
+    }
+
 
 }
